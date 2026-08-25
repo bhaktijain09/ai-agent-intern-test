@@ -1,0 +1,201 @@
+[
+  {
+    "id": "basic-return-window",
+    "messages": [
+      {"role": "user", "content": "How long does a regular customer have to return an unused backpack?"}
+    ],
+    "expect": {
+      "must_include": ["30"],
+      "must_not_include": ["14 days"],
+      "source_filename": "01-returns-policy-current.md"
+    }
+  },
+  {
+    "id": "order-status-basic",
+    "messages": [
+      {"role": "user", "content": "Where is my order ORD-1007?"}
+    ],
+    "expect": {
+      "tool": "order_lookup",
+      "must_include": ["shipped", "UPS"]
+    }
+  },
+  {
+    "id": "row-plus-shipping-cost",
+    "messages": [
+      {"role": "user", "content": "Do Row+ members pay for shipping?"}
+    ],
+    "expect": {
+      "must_include": ["free"],
+      "source_filename": "07-membership-benefits-current.md"
+    }
+  },
+  {
+    "id": "warranty-vs-return-window",
+    "messages": [
+      {"role": "user", "content": "My backpack zipper broke after 4 months, is that covered?"}
+    ],
+    "expect": {
+      "must_include": ["warranty"],
+      "source_filename": "05-warranty-policy-current.md"
+    }
+  },
+  {
+    "id": "legacy-policy-should-not-be-quoted-as-current",
+    "messages": [
+      {"role": "user", "content": "I heard returns used to only be 14 days, is that still true?"}
+    ],
+    "expect": {
+      "must_include": ["30"],
+      "must_not_include": ["14 days is still"]
+    }
+  },
+  {
+    "id": "international-shipping-uk",
+    "messages": [
+      {"role": "user", "content": "Do you ship to the UK, and will I owe customs fees?"}
+    ],
+    "expect": {
+      "must_include": ["United Kingdom", "VAT"],
+      "source_filename": "09-international-shipping.md"
+    }
+  },
+  {
+    "id": "tumbler-care-conflict",
+    "messages": [
+      {"role": "user", "content": "Can I put my Breeze Tumbler in the dishwasher?"}
+    ],
+    "expect": {
+      "must_include": ["conflict"],
+      "handoff": true
+    }
+  },
+  {
+    "id": "gift-card-stacking",
+    "messages": [
+      {"role": "user", "content": "Can I use two gift cards on one order?"}
+    ],
+    "expect": {
+      "must_include": ["one"],
+      "source_filename": "13-gift-cards-policy.md"
+    }
+  },
+  {
+    "id": "membership-tier-hallucination-check",
+    "messages": [
+      {"role": "user", "content": "Do you have a VIP membership tier above Row+?"}
+    ],
+    "expect": {
+      "must_not_include": ["yes, we have a VIP"],
+      "must_include": ["no"]
+    }
+  },
+  {
+    "id": "cancelled-order-not-arriving",
+    "messages": [
+      {"role": "user", "content": "Is ORD-1004 arriving tomorrow?"}
+    ],
+    "expect": {
+      "must_include": ["cancelled"],
+      "must_not_include": ["2026-08-16", "August 16"]
+    }
+  },
+  {
+    "id": "invalid-order-id-format",
+    "messages": [
+      {"role": "user", "content": "Can you check order 12345 for me?"}
+    ],
+    "expect": {
+      "must_include": ["order ID"]
+    }
+  },
+  {
+    "id": "gift-wrap-unsupported-feature",
+    "messages": [
+      {"role": "user", "content": "Can you gift wrap my order?"}
+    ],
+    "expect": {
+      "must_include": ["not"],
+      "source_filename": "10-faq-common-questions.md"
+    }
+  },
+  {
+    "id": "membership-refund-non-existent-order",
+    "messages": [
+      {"role": "user", "content": "Please cancel and refund order ORD-9999."}
+    ],
+    "expect": {
+      "must_include": ["couldn't find"],
+      "must_not_include": ["refund has been issued", "cancelled successfully"]
+    }
+  },
+  {
+    "id": "multi-turn-follow-up",
+    "messages": [
+      {"role": "user", "content": "Where is ORD-1005?"},
+      {"role": "user", "content": "When will it arrive?"}
+    ],
+    "expect": {
+      "must_include": ["2026-08-26"]
+    }
+  },
+  {
+    "id": "warranty-window-independent",
+    "messages": [
+      {"role": "user", "content": "My return window closed a month ago but my tumbler seal failed, can I still get help?"}
+    ],
+    "expect": {
+      "must_include": ["warranty"],
+      "must_not_include": ["nothing we can do"]
+    }
+  },
+  {
+    "id": "price-match-question",
+    "messages": [
+      {"role": "user", "content": "Will you price match a competitor?"}
+    ],
+    "expect": {
+      "must_include": ["not"],
+      "source_filename": "10-faq-common-questions.md"
+    }
+  },
+  {
+    "id": "processing-order-address-change",
+    "messages": [
+      {"role": "user", "content": "Can I change the shipping address on ORD-1002?"}
+    ],
+    "expect": {
+      "must_include": ["processing"]
+    }
+  },
+  {
+    "id": "shipped-order-address-change",
+    "messages": [
+      {"role": "user", "content": "Can I change the shipping address on ORD-1007?"}
+    ],
+    "expect": {
+      "must_include": ["shipped"],
+      "must_not_include": ["yes, I've updated"]
+    }
+  },
+  {
+    "id": "canada-duties-question",
+    "messages": [
+      {"role": "user", "content": "Will I owe duties on my Canadian order?"}
+    ],
+    "expect": {
+      "must_include": ["duties"],
+      "source_filename": "09-international-shipping.md"
+    }
+  },
+  {
+    "id": "digital-gift-card-delivery-time",
+    "messages": [
+      {"role": "user", "content": "How fast do digital gift cards arrive?"}
+    ],
+    "expect": {
+      "must_include": ["minutes"],
+      "source_filename": "13-gift-cards-policy.md"
+    }
+  }
+]

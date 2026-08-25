@@ -1,0 +1,270 @@
+{
+  "orders": [
+    {
+      "order_id": "ORD-1001",
+      "customer": {
+        "email": "jordan.blake@example.com",
+        "name": "Jordan Blake",
+        "address": "142 Cedar St, Portland, OR 97205"
+      },
+      "membership_tier": "standard",
+      "items": [
+        {"sku": "ATR-BAG-014", "name": "Fieldwalk Backpack", "quantity": 1, "price": 128.0}
+      ],
+      "placed_at": "2026-08-02",
+      "status": "delivered",
+      "status_updated_at": "2026-08-07T14:22:00Z",
+      "shipped_at": "2026-08-03T09:00:00Z",
+      "delivered_at": "2026-08-07T14:22:00Z",
+      "carrier": "UPS",
+      "tracking_number": "1Z999AA10123456784",
+      "estimated_delivery": null,
+      "customer_safe_message": null,
+      "internal_notes": "No issues, delivered on time.",
+      "risk_score": 12,
+      "support_tags": ["clean"]
+    },
+    {
+      "order_id": "ORD-1002",
+      "customer": {
+        "email": "priya.shah@example.com",
+        "name": "Priya Shah",
+        "address": "88 Harbor Ln, Seattle, WA 98101"
+      },
+      "membership_tier": "row_plus",
+      "items": [
+        {"sku": "ATR-TUM-020", "name": "Breeze Tumbler", "quantity": 2, "price": 34.0}
+      ],
+      "placed_at": "2026-08-20",
+      "status": "processing",
+      "status_updated_at": "2026-08-20T11:05:00Z",
+      "shipped_at": null,
+      "delivered_at": null,
+      "carrier": null,
+      "tracking_number": null,
+      "estimated_delivery": "2026-08-28",
+      "customer_safe_message": null,
+      "internal_notes": "Address verification pending.",
+      "risk_score": 8,
+      "support_tags": ["clean"]
+    },
+    {
+      "order_id": "ORD-1003",
+      "customer": {
+        "email": "sam.oyelaran@example.com",
+        "name": "Sam Oyelaran",
+        "address": "12 Birchwood Ave, Austin, TX 78701"
+      },
+      "membership_tier": "standard",
+      "items": [
+        {"sku": "ATR-JKT-030", "name": "Trailhead Rain Shell", "quantity": 1, "price": 165.0}
+      ],
+      "placed_at": "2026-07-10",
+      "status": "returned",
+      "status_updated_at": "2026-08-01T16:40:00Z",
+      "shipped_at": "2026-07-11T08:30:00Z",
+      "delivered_at": "2026-07-15T13:10:00Z",
+      "carrier": "USPS",
+      "tracking_number": "9400111202555843211234",
+      "estimated_delivery": "2026-07-15",
+      "customer_safe_message": "Refund issued to original payment method on 2026-08-03.",
+      "internal_notes": "Return reason: sizing. Refund processed manually by CS.",
+      "risk_score": 5,
+      "support_tags": ["clean", "refund_processed"]
+    },
+    {
+      "order_id": "ORD-1004",
+      "customer": {
+        "email": "leah.martinez@example.com",
+        "name": "Leah Martinez",
+        "address": "455 Willow Dr, Denver, CO 80203"
+      },
+      "membership_tier": "standard",
+      "items": [
+        {"sku": "ATR-BAG-014", "name": "Fieldwalk Backpack", "quantity": 1, "price": 128.0}
+      ],
+      "placed_at": "2026-08-10",
+      "status": "cancelled",
+      "status_updated_at": "2026-08-12T10:15:00Z",
+      "shipped_at": null,
+      "delivered_at": null,
+      "carrier": "UPS",
+      "tracking_number": "1Z999AA10198765432",
+      "estimated_delivery": "2026-08-16",
+      "customer_safe_message": "Order cancelled at customer request before it shipped. Full refund issued.",
+      "internal_notes": "Customer called in to cancel; refunded in full same day.",
+      "risk_score": 4,
+      "support_tags": ["clean", "cancelled_pre_ship"]
+    },
+    {
+      "order_id": "ORD-1005",
+      "customer": {
+        "email": "declan.ohara@example.com",
+        "name": "Declan O'Hara",
+        "address": "7 Maple Ct, Chicago, IL 60614"
+      },
+      "membership_tier": "row_plus",
+      "items": [
+        {"sku": "ATR-BOT-022", "name": "Ridgeline Water Bottle", "quantity": 1, "price": 28.0},
+        {"sku": "ATR-TUM-020", "name": "Breeze Tumbler", "quantity": 1, "price": 34.0}
+      ],
+      "placed_at": "2026-08-18",
+      "status": "shipped",
+      "status_updated_at": "2026-08-19T18:00:00Z",
+      "shipped_at": "2026-08-19T18:00:00Z",
+      "delivered_at": null,
+      "carrier": "UPS",
+      "tracking_number": "1Z999AA10145678901",
+      "estimated_delivery": "2026-08-26",
+      "customer_safe_message": null,
+      "internal_notes": "Row+ free shipping applied.",
+      "risk_score": 3,
+      "support_tags": ["clean"]
+    },
+    {
+      "order_id": "ORD-1006",
+      "customer": {
+        "email": "min-jun.kim@example.com",
+        "name": "Min-Jun Kim",
+        "address": "301 Pine St, San Francisco, CA 94108"
+      },
+      "membership_tier": "standard",
+      "items": [
+        {"sku": "ATR-GFT-100", "name": "$100 Gift Card", "quantity": 1, "price": 100.0}
+      ],
+      "placed_at": "2026-08-21",
+      "status": "delivered",
+      "status_updated_at": "2026-08-21T09:02:00Z",
+      "shipped_at": "2026-08-21T09:01:00Z",
+      "delivered_at": "2026-08-21T09:02:00Z",
+      "carrier": "Email",
+      "tracking_number": null,
+      "estimated_delivery": null,
+      "customer_safe_message": "Digital gift card delivered by email.",
+      "internal_notes": "Digital fulfillment, no physical shipment.",
+      "risk_score": 2,
+      "support_tags": ["clean", "digital"]
+    },
+    {
+      "order_id": "ORD-1007",
+      "customer": {
+        "email": "avery.chen@example.com",
+        "name": "Avery Chen",
+        "address": "19 Elm St, Brooklyn, NY 11201"
+      },
+      "membership_tier": "row_plus",
+      "items": [
+        {"sku": "ATR-BAG-014", "name": "Fieldwalk Backpack", "quantity": 1, "price": 128.0},
+        {"sku": "ATR-BOT-022", "name": "Ridgeline Water Bottle", "quantity": 1, "price": 28.0}
+      ],
+      "placed_at": "2026-08-19",
+      "status": "shipped",
+      "status_updated_at": "2026-08-21T07:45:00Z",
+      "shipped_at": "2026-08-21T07:45:00Z",
+      "delivered_at": null,
+      "carrier": "UPS",
+      "tracking_number": "1Z999AA10112345678",
+      "estimated_delivery": "2026-08-27",
+      "customer_safe_message": null,
+      "internal_notes": "Flagged for expedited handling due to prior late shipment complaint.",
+      "risk_score": 82,
+      "support_tags": ["watch", "prior_complaint"]
+    },
+    {
+      "order_id": "ORD-1008",
+      "customer": {
+        "email": "olamide.adeyemi@example.com",
+        "name": "Olamide Adeyemi",
+        "address": "63 Birch Rd, Miami, FL 33131"
+      },
+      "membership_tier": "standard",
+      "items": [
+        {"sku": "ATR-JKT-030", "name": "Trailhead Rain Shell", "quantity": 1, "price": 165.0}
+      ],
+      "placed_at": "2026-08-05",
+      "status": "delivered",
+      "status_updated_at": "2026-08-09T12:00:00Z",
+      "shipped_at": "2026-08-06T10:00:00Z",
+      "delivered_at": "2026-08-09T12:00:00Z",
+      "carrier": "USPS",
+      "tracking_number": "9400111202555843299887",
+      "estimated_delivery": null,
+      "customer_safe_message": null,
+      "internal_notes": "No issues.",
+      "risk_score": 6,
+      "support_tags": ["clean"]
+    },
+    {
+      "order_id": "ORD-1009",
+      "customer": {
+        "email": "tara.singh@example.com",
+        "name": "Tara Singh",
+        "address": "500 King St W, Toronto, ON M5V 1L9"
+      },
+      "membership_tier": "row_plus",
+      "items": [
+        {"sku": "ATR-TUM-020", "name": "Breeze Tumbler", "quantity": 1, "price": 34.0}
+      ],
+      "placed_at": "2026-08-15",
+      "status": "shipped",
+      "status_updated_at": "2026-08-17T13:30:00Z",
+      "shipped_at": "2026-08-17T13:30:00Z",
+      "delivered_at": null,
+      "carrier": "UPS",
+      "tracking_number": "1Z999AA10156789012",
+      "estimated_delivery": "2026-08-29",
+      "customer_safe_message": "International order — duties/taxes may apply on delivery.",
+      "internal_notes": "Canadian destination, standard customs handling.",
+      "risk_score": 10,
+      "support_tags": ["clean", "international"]
+    },
+    {
+      "order_id": "ORD-1010",
+      "customer": {
+        "email": "noah.fitzgerald@example.com",
+        "name": "Noah Fitzgerald",
+        "address": "21 Rose Cres, London, UK SW1A 1AA"
+      },
+      "membership_tier": "standard",
+      "items": [
+        {"sku": "ATR-BAG-014", "name": "Fieldwalk Backpack", "quantity": 1, "price": 128.0}
+      ],
+      "placed_at": "2026-08-01",
+      "status": "returned",
+      "status_updated_at": "2026-08-14T10:00:00Z",
+      "shipped_at": "2026-08-02T09:00:00Z",
+      "delivered_at": "2026-08-10T15:20:00Z",
+      "carrier": "USPS",
+      "tracking_number": "9400111202555843255551",
+      "estimated_delivery": "2026-08-10",
+      "customer_safe_message": "Refund issued to gift card balance on 2026-08-15 (order was paid partly by gift card).",
+      "internal_notes": "Partial gift card payment; refund split per policy.",
+      "risk_score": 7,
+      "support_tags": ["clean", "gift_card_refund"]
+    },
+    {
+      "order_id": "ORD-1011",
+      "customer": {
+        "email": "grace.oduya@example.com",
+        "name": "Grace Oduya",
+        "address": "9 Fern Way, Boston, MA 02116"
+      },
+      "membership_tier": "row_plus",
+      "items": [
+        {"sku": "ATR-BOT-022", "name": "Ridgeline Water Bottle", "quantity": 3, "price": 28.0}
+      ],
+      "placed_at": "2026-08-23",
+      "status": "processing",
+      "status_updated_at": "2026-08-23T08:00:00Z",
+      "shipped_at": null,
+      "delivered_at": null,
+      "carrier": null,
+      "tracking_number": null,
+      "estimated_delivery": "2026-08-30",
+      "customer_safe_message": null,
+      "internal_notes": "Bulk order, gift purchase per customer note in cart.",
+      "risk_score": 15,
+      "support_tags": ["clean"]
+    }
+  ]
+}
