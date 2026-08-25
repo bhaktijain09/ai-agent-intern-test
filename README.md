@@ -48,8 +48,8 @@ The goal is not to answer every question, but to **avoid confidently giving inco
                 FAISS RAG          Data Sanitization
                     │                    │
                     ▼                    │
-           Authority + Conflict         │
-                Detection               │
+           Authority + Conflict          │
+                Detection                │
                     │                    │
                     └─────────┬──────────┘
                               ▼
