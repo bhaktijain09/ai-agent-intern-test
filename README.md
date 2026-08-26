@@ -213,9 +213,6 @@ EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
 TOP_K=5
 SIMILARITY_THRESHOLD=0.35
 ```
-
-> **Important:** Never commit `.env` or your actual API key to GitHub.
-
 ---
 
 ## Run the Application
@@ -225,9 +222,6 @@ Start the Streamlit application:
 ```bash
 streamlit run app.py
 ```
-
-The application will be available at the local Streamlit URL shown in the terminal.
-
 ---
 
 ## Run Tests
